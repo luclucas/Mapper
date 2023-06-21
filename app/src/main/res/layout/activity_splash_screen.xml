@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--    <data>-->
+<!--        <variable name="splashscreenVM" type="com.lulu.mapper.modules.splashscreen.data.viewmodel.SplashscreenVM"/>-->
+<!--    </data>-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameSplashscreen"
+    style="@style/groupStyleindigo_500"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearColumnovalcopy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearRowovalcopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/viewOvalCopy"
+                android:layout_width="@dimen/_48pxh"
+                android:layout_height="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_155pxv"
+                android:layout_marginBottom="@dimen/_137pxv"
+                android:background="@drawable/rectangle_bg_blue_100_63_radius_24" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageGroupTen"-->
+<!--                android:layout_width="@dimen/_204pxh"-->
+<!--                android:layout_height="@dimen/_340pxh"-->
+<!--                android:layout_marginStart="@dimen/_96pxh"-->
+<!--                android:imageRes="@{@drawable/img_group10}"-->
+<!--                android:scaleType="fitXY"-->
+<!--                tools:ignore="ContentDescription"-->
+<!--                tools:src="@drawable/img_group10" />-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageFrame"
+            android:layout_width="@dimen/_247pxh"
+            android:layout_height="@dimen/_83pxh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_logo"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_logo" />
+
+        <LinearLayout
+            android:id="@+id/linearRowgroupnine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_127pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageGroupNine"-->
+<!--                android:layout_width="@dimen/_242pxh"-->
+<!--                android:layout_height="@dimen/_336pxh"-->
+<!--                android:imageRes="@{@drawable/img_group_circulo}"-->
+<!--                android:rotation="0"-->
+<!--                android:rotationX="180"-->
+<!--                android:rotationY="180"-->
+<!--                android:scaleType="fitXY"-->
+<!--                tools:ignore="ContentDescription"-->
+<!--                tools:src="@drawable/img_group10" />-->
+
+            <LinearLayout
+                android:id="@+id/linearRowovalcopyOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_82pxh"
+                android:layout_marginBottom="@dimen/_49pxv"
+                android:layout_weight="0.22"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/viewOvalCopyOne"
+                    android:layout_width="@dimen/_48pxh"
+                    android:layout_height="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_239pxv"
+                    android:background="@drawable/rectangle_bg_blue_100_63_radius_24" />
+
+                <View
+                    android:id="@+id/viewOvalCopyTwo"
+                    android:layout_width="@dimen/_20pxh"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_267pxv"
+                    android:background="@drawable/rectangle_bg_blue_100_6c_radius_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+<!--</layout>-->

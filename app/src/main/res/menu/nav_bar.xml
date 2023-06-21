@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title=""
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/img_nav_mail"/>
+    <item android:title=""
+        android:id="@+id/nav_icone"
+        android:icon="@drawable/img_icon_bluegray_100_16x18"/>
+    <item android:title=""
+        android:id="@+id/nav_home"
+        android:icon="@drawable/img_home"/>
+    <item android:title=""
+        android:id="@+id/nav_statistics"
+        android:icon="@drawable/img_icon_bluegray_100_18x18"/>
+    <item android:title=""
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/img_nav_profile"/>
+</menu>

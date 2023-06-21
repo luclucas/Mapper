@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string name="app_name">Mapper</string>
+
+    <string name="loading">Loading…</string>
+
+    <string name="no_internet_connection">No internet connection!</string>
+
+    <string name="msg_madelyn_email_c">madelyn@email.com.br</string>
+
+    <string name="lbl_668_0">668.0</string>
+
+    <string name="lbl_cotas">Cotas</string>
+
+    <string name="lbl_arquitetura">Arquitetura</string>
+
+    <string name="lbl_67">#67</string>
+
+    <string name="lbl_bras_lia">Brasília</string>
+
+    <string name="lbl_campus_centro">Campus: Centro</string>
+
+    <string name="lbl_minha_nota">Minha nota</string>
+
+    <string name="lbl_editar_perfil">Editar perfil</string>
+
+    <string name="lbl_gen_ro">Genêro</string>
+
+    <string name="lbl_nota_geral">Nota geral</string>
+
+    <string name="msg_15_dias_de_aces">15 dias de acesso total</string>
+
+    <string name="msg_col_gio_cci_2">Colégio CCI - 2° ano Ensino médio</string>
+
+    <string name="lbl_administra_o">Administração</string>
+
+    <string name="msg_1702158_1_an">1702158 \u2022 1º ano B \u2022 Brasília</string>
+
+    <string name="msg_acompanhe_sua_m">Acompanhe sua media de notas</string>
+
+    <string name="msg_ci_ncias_da_nat">Ciências da natureza</string>
+
+    <string name="lbl_mg">MG</string>
+
+    <string name="msg_media_de_nota_22">Media de nota 2021: 730.0</string>
+
+    <string name="lbl_anima_o">Animação</string>
+
+    <string name="lbl_agronomia">Agronomia</string>
+
+    <string name="lbl_feminino">Feminino</string>
+
+    <string name="lbl_56">#56</string>
+
+    <string name="lbl_ms">MS</string>
+
+    <string name="lbl_mt">MT</string>
+
+    <string name="lbl_es">ES</string>
+
+    <string name="msg_administra_o_p2">Administração Pública e Gestão Social</string>
+
+    <string name="lbl_antropologia">Antropologia</string>
+
+    <string name="lbl_entrar">Entrar</string>
+
+    <string name="msg_selecione_o_est">Selecione o Estado</string>
+
+    <string name="lbl_fazer_upgrade">FAZER UPGRADE</string>
+
+    <string name="msg_linguagens_e_c">Linguagens e códigos</string>
+
+    <string name="msg_media_de_nota_2">Media de nota 2021: 620.0</string>
+
+    <string name="msg_calculadora_sis">Calculadora SISU</string>
+
+    <string name="msg_matricula_170">Matricula - 1702158</string>
+
+    <string name="lbl_escola">Escola</string>
+
+    <string name="msg_22_anos_fuvest">22 anos FUVEST -USP</string>
+
+    <string name="lbl_simulados">simulados</string>
+
+    <string name="lbl_df">DF</string>
+
+    <string name="lbl_cidade">cidade</string>
+
+    <string name="msg_ufb_universid">UFB - Universidade Federal de Brasília</string>
+
+    <string name="lbl_agroneg_cio">Agronegócio</string>
+
+    <string name="msg_insira_suas_not">insira suas notas</string>
+
+    <string name="msg_escolha_seu_cur">Escolha seu curso</string>
+
+    <string name="lbl_calend_rio">Calendário</string>
+
+    <string name="lbl_e_mail2">E-mail</string>
+
+    <string name="lbl_senha">Senha</string>
+
+    <string name="lbl_ma">MA</string>
+
+    <string name="msg_c_digo_de_valid">Código de validação</string>
+
+    <string name="lbl_meus_dados">Meus dados</string>
+
+    <string name="lbl_sua_nota">Sua nota: </string>
+
+    <string name="lbl_rank_turma">rank turma</string>
+
+    <string name="lbl_mapper_premium">MAPPER PREMIUM</string>
+
+    <string name="lbl_ce">CE</string>
+
+    <string name="lbl_reda_o">Redação</string>
+
+    <string name="lbl_seu_e_mail">Seu e-mail</string>
+
+    <string name="msg_recuperar_acess">Recuperar acesso</string>
+
+    <string name="msg_relat_rios_peda">Relatórios pedagógicos</string>
+
+    <string name="lbl_590">590</string>
+
+    <string name="msg_agronomia_tem">Agronomia - Tempo integral</string>
+
+    <string name="lbl_buscar">Buscar</string>
+
+    <string name="lbl_points">POINTS</string>
+
+    <string name="lbl_simulados2">Simulados</string>
+
+    <string name="msg_ampla_concorren">Ampla concorrencia</string>
+
+    <string name="msg_esqueci_minha_s">Esqueci minha senha</string>
+
+    <string name="lbl_ba">BA</string>
+
+    <string name="msg_calcular_minha">Calcular minha nota</string>
+
+    <string name="lbl_estado">Estado</string>
+
+    <string name="lbl_local_rank">LOCAL RANK</string>
+
+    <string name="msg_modalidade_ampl">Modalidade Ampla concorrência</string>
+
+    <string name="msg_3_eventos_esse">3 eventos esse mês</string>
+
+    <string name="lbl_matem_tica">Matemática</string>
+
+    <string name="lbl_10_anos_unb_df">10 anos UNB DF</string>
+
+    <string name="lbl_mapper_premium2">Mapper premium</string>
+
+    <string name="lbl_14_anos_pas_1">14 anos PAS 1</string>
+
+    <string name="lbl_mudar_de_plano">Mudar de plano</string>
+
+    <string name="lbl_11_anos_enem">11 anos ENEM</string>
+
+    <string name="lbl_ano">Ano</string>
+
+    <string name="msg_n_o_possui_cont">Não possui conta?</string>
+    <string name="criar_conta"> <u>Criar conta</u></string>
+    <string name="criar_conta2">Criar conta</string>
+
+    <string name="lbl_ac">AC</string>
+
+    <string name="lbl_sua_nota_668_0">Sua nota: 668.0</string>
+
+    <string name="lbl_aulas_te_ricas">Aulas teóricas</string>
+
+    <string name="msg_ci_ncias_humana">Ciências humanas</string>
+
+    <string name="lbl_plano_premium">PLANO PREMIUM</string>
+
+    <string name="lbl_r_0_00">R$ 0,00</string>
+
+    <string name="lbl_col_gio_cci">Colégio CCI</string>
+
+    <string name="lbl_alimentos">Alimentos</string>
+
+    <string name="lbl_al">AL</string>
+
+    <string name="lbl">*******</string>
+
+    <string name="lbl_fazer_login">Fazer login</string>
+
+    <string name="lbl_am">AM</string>
+
+    <string name="lbl_ap">AP</string>
+
+    <string name="lbl_email">Email</string>
+
+    <string name="lbl_recuperar_senha">Recuperar senha</string>
+
+    <string name="msg_data_de_nascime">Data de nascimento</string>
+
+    <string name="lbl_23_aulas_novas">23 aulas novas </string>
+
+    <string name="lbl_colegio_cci">Colegio cci</string>
+
+    <string name="lbl_confirmar_senha">Confirmar senha</string>
+
+    <string name="lbl_1">1</string>
+
+    <string name="lbl_2">2°</string>
+
+    <string name="msg_administra_o_d">Administração de Empresas</string>
+
+    <string name="lbl_agroind_stria">Agroindústria</string>
+
+    <string name="lbl_4">#4</string>
+
+    <string name="lbl_criar_conta">Criar conta</string>
+
+    <string name="lbl_madelyn_dias2">madelyn Dias</string>
+
+    <string name="lbl_madelyn_dias">Madelyn Dias</string>
+
+    <string name="lbl_rank_escola">RANK escola</string>
+
+    <string name="lbl_5_252_quest_es">5.252 Questões</string>
+
+    <string name="msg_analise_e_desen">Analise e Desenvolvimento de sistemas</string>
+
+    <string name="msg_informe_seu_ema">informe seu email para recuperar sua senha.</string>
+
+    <string name="lbl_nome">Nome</string>
+
+    <string name="lbl_r_14_90_m_s">R$ 14,90 / Mês</string>
+
+    <string name="lbl_plano_basico">PLANO BASICO</string>
+
+    <string name="lbl_agroecologia">Agroecologia</string>
+
+    <string name="msg_conhe_a_todas_a">Conheça todas as vantagens de ser premium.</string>
+
+    <string name="lbl_go">GO</string>
+
+    <string name="lbl_quest_es">Questões</string>
+
+    <string name="lbl_22_03_2002">22/03/2002</string>
+
+    <string name="msg_ifb_instituto">IFB - Instituto Federal de Brasília</string>
+
+    <string name="lbl_digite_sua_nota">Digite sua nota</string>
+
+    <string name="msg_campus_vila_no">Campus: Vila Nova</string>
+
+    <string name="msg_n_o_possui_cont2">Não possui conta? </string>
+
+    <string name="lbl_aulas">Aulas</string>
+
+    <string name="msg_selecione_o_cur">Selecione o curso</string>
+
+    <string name="msg_administra_o_p">Administração Pública</string>
+
+    <string name="msg_please_enter_valid_email">Please enter valid email</string>
+
+    <string name="msg_please_enter_valid_pa">Please enter valid password</string>
+
+</resources>
