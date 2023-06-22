@@ -13,8 +13,10 @@
         android:theme="@style/Theme.Mapper"
         tools:targetApi="31">
         <activity
-            android:name=".modules.home.ui.Home"
-            android:exported="false" />
+            android:name="com.lulu.mapper.modules.home.ui.Home"
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".modules.recuperar_senha.ui.RecuperarSenha"
             android:exported="false" />

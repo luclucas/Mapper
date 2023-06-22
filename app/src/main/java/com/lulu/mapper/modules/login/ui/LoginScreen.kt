@@ -32,6 +32,7 @@ class LoginScreen : AppCompatActivity() {
         }
 
         btnLogin.setOnClickListener{
+//            startActivity(Intent(this, Home::class.java))
             startActivity(Home().getIntent(this@LoginScreen))
         }
 

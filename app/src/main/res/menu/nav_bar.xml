@@ -6,7 +6,7 @@
         android:id="@+id/nav_messages"
         android:icon="@drawable/img_nav_mail"/>
     <item android:title=""
-        android:id="@+id/nav_icone"
+        android:id="@+id/nav_questions"
         android:icon="@drawable/img_icon_bluegray_100_16x18"/>
     <item android:title=""
         android:id="@+id/nav_home"
