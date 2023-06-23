@@ -431,7 +431,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLiveQuiz3"
+                    android:id="@+id/linearCalculadoraSisu"
                     style="@style/groupStylepurple_200cornerRadius"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -440,6 +440,7 @@
                     android:layout_marginEnd="@dimen/_24pxh"
                     android:layout_marginBottom="@dimen/_60pxv"
                     android:gravity="start"
+                    android:clickable="true"
                     android:orientation="horizontal">
 
                     <ImageButton
