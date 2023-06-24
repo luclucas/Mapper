@@ -149,7 +149,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/linearInput1"
+                        android:id="@+id/linearEstado"
                         style="@style/groupStylewhite_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

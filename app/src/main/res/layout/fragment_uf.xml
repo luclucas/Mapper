@@ -3,7 +3,9 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -35,24 +37,28 @@
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.AppCompatEditText
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/edit_text_buscar_shape"
             android:drawableLeft="@drawable/search_icon"
             android:drawablePadding="10dp"
-            android:hint="Buscar"
             android:padding="15dp"
             android:textColor="@color/gray_100"
             android:textColorHint="@color/gray_100"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:queryHint="Buscar"
+            android:actionViewClass="android.support.v7.widget.SearchView"/>
+
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerUf"
             android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
