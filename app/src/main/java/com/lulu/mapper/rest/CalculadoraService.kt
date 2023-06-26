@@ -3,6 +3,7 @@ package com.lulu.mapper.rest
 import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.lulu.mapper.model.CursoItem
 import com.lulu.mapper.model.UnidadeFederativaItem
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -15,10 +16,13 @@ interface CalculadoraService {
 
     @GET("uf")
     fun getAllUfs(): Call<List<UnidadeFederativaItem>>
+    @GET("curso")
+    fun getAllCursos(): Call<List<CursoItem>>
 
     companion object{
 
         private const val BASE:String = "http://18.233.181.140:8000/hmlg/calculadora/"
+
         private val calculadoraService: CalculadoraService by lazy{
 
             val gson: Gson = GsonBuilder()

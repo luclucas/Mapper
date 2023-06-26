@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.lulu.mapper.R
+import com.lulu.mapper.modules.selecao_curso.SelecaoCurso
 import com.lulu.mapper.modules.ufs.ui.UfFragment
 
 class CalculadoraSisuFragment : Fragment() {
@@ -28,21 +29,19 @@ class CalculadoraSisuFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_calculadora_sisu, container, false)
 
         val linearEstado: LinearLayout = view.findViewById(R.id.linearEstado)
+        val linearCurso: LinearLayout = view.findViewById(R.id.linearCurso)
+
         linearEstado.setOnClickListener{
             replaceFragment(UfFragment())
         }
+
+        linearCurso.setOnClickListener {
+            replaceFragment(SelecaoCurso())
+        }
+
         return view
     }
 
-    companion object {
-
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            CalculadoraSisuFragment().apply {
-                arguments = Bundle().apply {
-                }
-            }
-    }
 
     private fun replaceFragment(fragment:Fragment){
         val transaction=requireActivity().supportFragmentManager

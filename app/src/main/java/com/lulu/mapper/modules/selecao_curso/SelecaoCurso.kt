@@ -1,33 +1,35 @@
-package com.lulu.mapper.modules.ufs.ui
+package com.lulu.mapper.modules.selecao_curso
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.lulu.mapper.R
+import com.lulu.mapper.model.CardCursoAdapter
 import com.lulu.mapper.model.CardUfCursoAdapter
+import com.lulu.mapper.model.CursoItem
 import com.lulu.mapper.model.UnidadeFederativaItem
 import com.lulu.mapper.repositories.CalculadoraRepository
 import com.lulu.mapper.rest.CalculadoraService
+import com.lulu.mapper.viewmodel.curso.CursoViewModel
+import com.lulu.mapper.viewmodel.curso.CursoViewModelFactory
 import com.lulu.mapper.viewmodel.ufs.UfViewModel
 import com.lulu.mapper.viewmodel.ufs.UfViewModelFactory
-import java.util.Locale
 
-class UfFragment : Fragment() {
-
-    private lateinit var ufVM: UfViewModel
+class SelecaoCurso : Fragment() {
+    private lateinit var cursoVM: CursoViewModel
     lateinit var searchView: androidx.appcompat.widget.SearchView
     private val calculadoraService = CalculadoraService.getInstance()
 
-    private val adapter = CardUfCursoAdapter {
+    private val adapter = CardCursoAdapter {
 
     }
 
@@ -41,10 +43,10 @@ class UfFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerUf)
         recyclerView.layoutManager = LinearLayoutManager(view.context)
 
-        ufVM = ViewModelProvider(
+        cursoVM = ViewModelProvider(
             this,
-            UfViewModelFactory(CalculadoraRepository(calculadoraService))
-        )[UfViewModel::class.java]
+            CursoViewModelFactory(CalculadoraRepository(calculadoraService))
+        )[CursoViewModel::class.java]
 
         recyclerView.adapter = adapter
 
@@ -62,7 +64,7 @@ class UfFragment : Fragment() {
                 if (!newText.isNullOrBlank()){
                     filter(newText)
                 } else{
-                    ufVM.getAllUfs()
+                    cursoVM.getAllCursos()
                 }
                 return false
             }
@@ -74,28 +76,28 @@ class UfFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        ufVM.ufList.observe(this) {
-            adapter.setUfList(it)
+        cursoVM.cursoList.observe(this) {
+            adapter.setCursoList(it)
         }
-        ufVM.errorMessage.observe(this) {
+        cursoVM.errorMessage.observe(this) {
             Log.i("Lulutag", it)
         }
 
     }
 
-override fun onResume() {
-    super.onResume()
-    ufVM.getAllUfs()
-}
+    override fun onResume() {
+        super.onResume()
+        cursoVM.getAllCursos()
+    }
 
     private fun filter(text: String) {
         // creating a new array list to filter our data.
-        val filteredlist: ArrayList<UnidadeFederativaItem> = ArrayList()
+        val filteredlist: ArrayList<CursoItem> = ArrayList()
 
         // running a for loop to compare elements.
-        for (item in ufVM.ufList.value!!.toList()) {
+        for (item in cursoVM.cursoList.value!!.toList()) {
             // checking if the entered string matched with any item of our recycler view.
-            if (item.uf.lowercase().contains(text.lowercase())) {
+            if (item.curso.lowercase().contains(text.lowercase())) {
                 // if the item is matched we are
                 // adding it to our filtered list.
                 filteredlist.add(item)
@@ -108,8 +110,9 @@ override fun onResume() {
         } else {
             // at last we are passing that filtered
             // list to our adapter class.
-            adapter.setUfList(filteredlist)
+            adapter.setCursoList(filteredlist)
         }
     }
+
 
 }

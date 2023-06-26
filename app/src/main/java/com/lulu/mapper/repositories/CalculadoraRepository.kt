@@ -5,4 +5,6 @@ import com.lulu.mapper.rest.CalculadoraService
 class CalculadoraRepository constructor(private val calculadoraService: CalculadoraService){
 
     fun getAllUfs() = calculadoraService.getAllUfs()
+
+    fun getAllCursos() = calculadoraService.getAllCursos()
 }

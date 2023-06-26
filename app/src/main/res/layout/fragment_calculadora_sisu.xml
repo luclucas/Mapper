@@ -113,12 +113,13 @@
                         tools:ignore="Autofill" />
 
                     <LinearLayout
-                        android:id="@+id/linearInput"
+                        android:id="@+id/linearCurso"
                         style="@style/groupStylewhite_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_15pxv"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:clickable="true">
 
                         <TextView
                             android:id="@+id/txtChoosequizcat"

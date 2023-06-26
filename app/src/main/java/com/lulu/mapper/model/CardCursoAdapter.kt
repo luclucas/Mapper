@@ -3,17 +3,15 @@ package com.lulu.mapper.model
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.lulu.mapper.R
 
-class CardUfCursoAdapter constructor(private val onItemClicked: (UnidadeFederativaItem) -> Unit): RecyclerView.Adapter<CardUfCursoAdapter.ViewHolder>() {
+class CardCursoAdapter constructor(private val onItemClicked: (CursoItem) -> Unit): RecyclerView.Adapter<CardCursoAdapter.ViewHolder>() {
 
-    private var ufs = mutableListOf<UnidadeFederativaItem>()
-    fun setUfList(unidadeFederativa: List<UnidadeFederativaItem>, aux: String? = ""){
-        this.ufs = unidadeFederativa.toMutableList()
+    private var cursos = mutableListOf<CursoItem>()
+    fun setCursoList(curso: List<CursoItem>, aux: String? = ""){
+        this.cursos = curso.toMutableList()
         notifyDataSetChanged()
     }
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
@@ -26,14 +24,13 @@ class CardUfCursoAdapter constructor(private val onItemClicked: (UnidadeFederati
         return ViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return ufs.size
-    }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = ufs[position]
-        holder.textView.text = item.uf
+        val item = cursos[position]
+        holder.textView.text = item.curso
     }
 
+    override fun getItemCount(): Int {
+        return cursos.size
+    }
 
 }
